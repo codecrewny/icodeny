@@ -29,6 +29,8 @@ This is meant to be a rough outline. Feelf ree to swap out parts as you see fit.
 
 ## Day 2
 ### Session 1 - Intro to Programming
+**Duration:** 3 - 4 hours
+
 **Objective:** students should be introduced to basic programming concepts
 
 - Talk about how programming works
@@ -40,6 +42,8 @@ This is meant to be a rough outline. Feelf ree to swap out parts as you see fit.
 - Objects
 
 ### Session 2 - Web Development
+**Duration:** 3 - 4 hours
+
 **Objective:** students should be introduced to basic programming concepts. You will find a sample Todo app built with Node in this repo that you can use for a basis. Included will be the completed app and a starter directory. Students should have a high level understanding of what MVC, CRUD and routes are. They will also learn about basic Git and the deployment process.
 
 - Explain what web development is
