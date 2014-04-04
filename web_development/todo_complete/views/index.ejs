@@ -10,7 +10,7 @@
 <% todos.forEach(function(todo) { %>
   <div>
     <p><%= todo.content %> | <%= todo.updated_at %></p>
-    <a href="/edit/<%= todo._id %>" >Update</a>
+    <a href="/edit/<%= todo._id %>" >Edit</a>
     <a href="/destroy/<%= todo._id %>" >Delete</a>
   </div>
 <% }); %>

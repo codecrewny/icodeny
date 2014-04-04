@@ -23,15 +23,6 @@ exports.create = function(req, res) {
   });
 };
 
-//Destroy action
-exports.delete = function(req, res) {
-  Todo.findById(req.params.id, function(err, todo) {
-    todo.remove(function(err, todo) {
-      res.redirect('/');
-    });  
-  });
-};
-
 // Edit action
 exports.edit = function(req, res) {
   Todo.findById(req.params.id, function(err, todo) {
@@ -51,5 +42,14 @@ exports.update = function (req, res ){
     todo.save( function (err, todo, count){
       res.redirect( '/' );
     });
+  });
+};
+
+//Destroy action
+exports.delete = function(req, res) {
+  Todo.findById(req.params.id, function(err, todo) {
+    todo.remove(function(err, todo) {
+      res.redirect('/');
+    });  
   });
 };

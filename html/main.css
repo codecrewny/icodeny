@@ -1,6 +1,25 @@
 body {
-	font-family: Helvetica;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	margin:0;
+}
+
+h1 { font-size:36px; }
+
+h2 { font-size: 28px; }
+
+h3 { font-size: 24px; }
+
+p, ul, li {
+	font-size:18px;
+}
+
+img {
+	margin-right:50px;
+}
+
+a {
+	color:#fff;
+	text-decoration: none;
 }
 
 .container {
@@ -8,53 +27,64 @@ body {
 }
 
 /*Navigation*/
+#navigation {
+	margin-bottom:20px;
+}
+
 .nav li {
 	text-decoration: none;
 	display:inline;
-	margin:10px;
-	background-color:#000;
+	margin-right:20px;
 	color:white;
-	padding:10px;
-}
-
-#navigation {
-
 }
 
 #main {
-	padding:30px;
-	background-color:#3686be;
+	padding:50px;
+	background-color:rgb(41, 106, 212);
 	color:#fff;
+	height:485px;
+}
+
+#divider {
+	background-color:rgb(33, 85, 170);
+	color:#fff;
+	padding:5px;
+	text-align:center;
 }
 
 #facts {
-	color:#000;
-	background-color:#fff;
 	padding:30px;
+	text-align:center;
 }
 
 #favorites {
 	padding:30px;
-	background-color:#3686be;
-	color:#fff;
+	text-align:center;
 }
 
 #portfolio {
 	padding: 30px;
+	text-align:center;
 }
 
 #contact {
 	padding: 30px;
 	background-color:#eef1f2;
+	text-align:center;
 }
 
-#resources {
-	padding:30px;
+#social {
+	background-color: #5B6E8C;
+	color:#e2eeff;
+	text-align:center;
+	padding: 2px;
 }
+
 
 #footer {
 	background-color: #000;
 	color:#fff;
 	font-size:10px;
 	padding: 10px;
+	text-align:center;
 }
