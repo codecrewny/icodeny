@@ -6,7 +6,6 @@ var todos = require('./controllers/todos');
 var http = require('http');
 var path = require('path');
 var engine = require('ejs-locals');
-
 var app = express();
 
 // all environments
@@ -32,10 +31,9 @@ app.get('/', todos.index);
 app.post('/create', todos.create);
 app.get('/destroy/:id', todos.delete);
 app.get('/edit/:id', todos.edit);
-app.post( '/update/:id', todos.update );
-// require('./routes')(app);
+app.post('/update/:id', todos.update);
 
 // Run our Node server
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});
+var port = app.get('port');
+app.listen(port);
+console.log('Node server listening on port ' + port);

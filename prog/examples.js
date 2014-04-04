@@ -74,15 +74,19 @@ myGear; // ['sneakers', 't-shirt', 'jacket'];
 // Loops
 myGear = ['sneakers' , 't-shirts', 'jacket'];
 
-for (var i = 0; i < myGear; i++) {
-  console.log(myGear[i]);
-}
-
 var i = 0;
 while (i < 10) {
   console.log(i);
   i++;
 }
+
+for (var i = 0; i < myGear; i++) {
+  console.log(myGear[i]);
+}
+
+myGear.forEach(function(item){
+	console.log(item);
+});
 
 
 // Functions

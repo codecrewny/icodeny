@@ -4,7 +4,7 @@ var Todo = mongoose.model('Todo');
 // Index action
 exports.index = function(req, res){
   Todo.find().
-  sort('updated-at').
+  sort('updated_at').
   exec(function (err, todos, count) {
     res.render('index', {
       title: "My Todos",
@@ -23,7 +23,6 @@ exports.create = function(req, res) {
   });
 };
 
-
 //Destroy action
 exports.delete = function(req, res) {
   Todo.findById(req.params.id, function(err, todo) {
@@ -35,17 +34,16 @@ exports.delete = function(req, res) {
 
 // Edit action
 exports.edit = function(req, res) {
-  Todo.find().
-  sort('updated-at').
-  exec(function(err, todos) {
+  Todo.findById(req.params.id, function(err, todo) {
     res.render('edit', {
       title: 'Edit Todo',
-      todos: todos,
+      todo: todo,
       current: req.params.id
     });
   });
 };
 
+// Update Action
 exports.update = function (req, res ){
   Todo.findById( req.params.id, function ( err, todo ){
     todo.content    = req.body.content;
