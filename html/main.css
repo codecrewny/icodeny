@@ -22,10 +22,6 @@ a {
 	text-decoration: none;
 }
 
-.container {
-	padding:50px;
-}
-
 /*Navigation*/
 #navigation {
 	margin-bottom:20px;
@@ -70,6 +66,7 @@ a {
 #contact {
 	padding: 30px;
 	background-color:#eef1f2;
+	color:#5B6E8C;
 	text-align:center;
 }
 
