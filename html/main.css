@@ -1,6 +1,8 @@
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	margin:0;
+	font-weight: 300;
+	font-size: 16px;
 }
 
 h1 { font-size:36px; }
@@ -9,9 +11,7 @@ h2 { font-size: 28px; }
 
 h3 { font-size: 24px; }
 
-p, ul, li {
-	font-size:18px;
-}
+
 
 img {
 	margin-right:50px;
@@ -58,6 +58,10 @@ a {
 	text-align:center;
 }
 
+#favorites a {
+	color:#5B6E8C;
+}
+
 #portfolio {
 	padding: 30px;
 	text-align:center;
@@ -79,9 +83,8 @@ a {
 
 
 #footer {
-	background-color: #000;
+	background-color: #2b3442;
 	color:#fff;
-	font-size:10px;
 	padding: 10px;
 	text-align:center;
 }
