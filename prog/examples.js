@@ -119,4 +119,7 @@ playerOne.age; // 30
 playerOne.number; // 6
 playerOne.rings = 2;
 
+var myObject = new Object();
+var date = new Date();
+
 // Exercise - students should get together in groups and build a simple program using what they learned.

@@ -3,22 +3,16 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <div id="layout">
 
+    <div>
       <%- body %>
+    </div>
+    
+    <div class="footer">
+      &#169; Code Crew, 2014
+    </div>
 
-      <div id="layout-footer"></div>
-    </div>
-    <div id="footer-wrap">
-      <div id="footer">
-        <div class="footer-content">
-        <div class="footer-content">&#169; Code Crew, 2014</div>
-      </div>
-    </div>
   </body>
 </html>
