@@ -28,8 +28,7 @@ exports.edit = function(req, res) {
   Todo.findById(req.params.id, function(err, todo) {
     res.render('edit', {
       title: 'Edit Todo',
-      todo: todo,
-      current: req.params.id
+      todo: todo
     });
   });
 };

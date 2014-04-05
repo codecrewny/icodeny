@@ -8,6 +8,12 @@ var http = require('http');
 var path = require('path');
 var engine = require('ejs-locals');
 var app = express();
+var mongoose = require('mongoose');
+
+// connect to the database
+var uristring = process.env.MONGOLAB_URI ||
+process.env.MONGOHQ_URL || 'mongodb://localhost/express-todo';
+mongoose.connect(uristring);
 
 // all environments
 app.set('port', process.env.PORT || 3000);
