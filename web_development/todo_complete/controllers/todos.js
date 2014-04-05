@@ -4,7 +4,7 @@ var Todo = mongoose.model('Todo');
 // Index action
 exports.index = function(req, res){
   Todo.find().
-  sort('updated_at').
+  sort('-updated_at').
   exec(function (err, todos, count) {
     res.render('index', {
       title: "My Todos",

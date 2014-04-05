@@ -1,5 +1,8 @@
 // Basic Programming examples. Feel free to change or add more examples to this file.
 
+// Hello World example
+console.log('Hello World!');
+
 // Data Types
 // Strings
 'cat'
@@ -104,6 +107,10 @@ var add = function(num1, num2) {
   return num1 + num2;
 }
 add(1, 2); // 3
+
+// calling method on an object
+myGear.push();
+myGear.pop();
 
 
 // Objects
