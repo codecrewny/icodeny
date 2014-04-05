@@ -34,6 +34,10 @@ a {
 	color:white;
 }
 
+.no-deco {
+	text-decoration: none;
+}
+
 #main {
 	padding:50px;
 	background-color:rgb(41, 106, 212);
@@ -53,13 +57,11 @@ a {
 	text-align:center;
 }
 
+#facts a { color: ;}
+
 #favorites {
 	padding:30px;
 	text-align:center;
-}
-
-#favorites a {
-	color:#5B6E8C;
 }
 
 #portfolio {
