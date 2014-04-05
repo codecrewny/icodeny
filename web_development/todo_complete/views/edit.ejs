@@ -1,14 +1,18 @@
 <% layout( 'layout' ) -%>
  
-<h1><%= title %></h1>
+<div class="container">
 
-<p>Task: <%= todo.content %></p>
+	<h1><%= title %></h1>
 
-<p>Last Update: <%= todo.updated_at %></p>
+	<p>Task: <%= todo.content %></p>
 
-<form action="/update/<%= todo._id %>" method="post">
-  <input type="text" name="content" value="<%= todo.content %>" />
-  <input type="submit" name="submit">
-</form>
- 
-<a href="/">Back</a>
+	<p>Last Update: <%= todo.updated_at %></p>
+
+	<form action="/todos/update/<%= todo._id %>" method="post">
+	  <input type="text" name="content" value="<%= todo.content %>" />
+	  <input type="submit" name="submit">
+	</form>
+	 
+	<a href="/todos">Back</a>
+	
+</div>
